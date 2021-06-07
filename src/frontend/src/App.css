@@ -4,3 +4,7 @@
   box-sizing: border-box;
   font-family: "Fira Sans", sans-serif;
 }
+
+.home_page {
+  height: 200vh;
+}
