@@ -10,10 +10,12 @@ export const MainNav = () => {
   return (
     <div className="nav__container">
       <div className="nav__logo">
-        <img className="logo" src="./IPL.png" alt="IPL Logo" />
-        <Link className="hamberger" onClick={handleClick}>
-          {click ? <MenuIcon /> : <CloseMenu />}
+        <Link to="/">
+          <img className="logo" src="./IPL.png" alt="IPL Logo" />
         </Link>
+        <span className="hamberger" onClick={handleClick}>
+          {click ? <MenuIcon /> : <CloseMenu />}
+        </span>
       </div>
       <div className="nav__links">
         <ul className={click ? "close__link" : "nav__link"}>

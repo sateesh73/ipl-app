@@ -3,6 +3,7 @@ package com.turnament.ipl.controller;
 import java.time.LocalDate;
 import java.util.List;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -14,6 +15,7 @@ import com.turnament.ipl.repository.MatchRepository;
 import com.turnament.ipl.repository.TeamRepository;
 
 @RestController
+@CrossOrigin
 public class TeamController {
 
 	private TeamRepository teamRepository;
